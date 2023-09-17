@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Click Game</h1>
+    <div id="app">
+      <div class="players-records">
+        <p class="players-title">Players</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody id="player"></tbody>
+        </table>
+      </div>
+      <div class="game-controls">
+        <div class="name-btn">
+          <button id="first-btn" onclick="openPrompt()">Enter Name</button>
+        </div>
+        <div class="timer-wrapper">
+          <span class="time-tick"></span>
+        </div>
+
+        <div class="count-and-click">
+          <div class="counter">0</div>
+          <div class="click-here">
+            <button id="second-btn" disabled onclick="clickStarted()">
+              Click Here
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+  <!-- class list rather than individual style -->
+</html>

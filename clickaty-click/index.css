@@ -1,0 +1,117 @@
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  background-color: #efe4d4;
+  overflow-x: hidden;
+}
+h1 {
+  text-align: center;
+}
+button {
+  border: none;
+}
+#app {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.game-controls {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.time-tick {
+  width: 120px;
+  color: silver;
+  background-color: black;
+  text-align: center;
+  font-weight: 800;
+  height: 100px;
+  font-size: 42px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-text-stroke: 1px white;
+}
+
+.name-btn button {
+  color: black;
+  background-color: #0094ff;
+  /* height: 40px; */
+  padding: 12px;
+  font-size: 42px;
+}
+@keyframes name-zoom {
+  from {
+    height: 40px;
+    padding: 6px;
+  }
+  to {
+    height: 52px;
+    padding: 12px;
+  }
+}
+
+.count-and-click {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #ff9c00;
+  width: 40%;
+  height: 120px;
+}
+.count-and-click .counter {
+  display: inline-block;
+  width: 100px;
+  background-color: white;
+  text-align: center;
+  font-size: 42px;
+  color: black;
+  border-radius: 50%;
+  padding: 10px;
+}
+.count-and-click button {
+  border-radius: 50%;
+  background-color: gray;
+  height: 80px;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  font-size: 32px;
+  color: black;
+}
+
+.players-records {
+  background-color: #edccba;
+  padding: 8px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #564a2d;
+  height: inherit;
+}
+.players-records td,
+th {
+  padding: 2px 12px;
+}
+.players-title {
+  font-size: 36px;
+  margin: 4px 0px 0px;
+  text-decoration: underline;
+}
+th,
+td {
+  text-align: center;
+  font-size: 24px;
+}
