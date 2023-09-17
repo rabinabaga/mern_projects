@@ -38,6 +38,7 @@ button {
   text-align: center;
   display: flex;
   align-items: center;
+  border-radius: 3px;
   justify-content: center;
   -webkit-text-stroke: 1px white;
 }
@@ -48,6 +49,8 @@ button {
   /* height: 40px; */
   padding: 12px;
   font-size: 42px;
+  box-shadow: inset 3px 2px 6px 2px #333;
+  border-radius: 10%;
 }
 @keyframes name-zoom {
   from {
@@ -68,6 +71,8 @@ button {
   background-color: #ff9c00;
   width: 40%;
   height: 120px;
+  padding: 20px;
+  border-radius: 3px;
 }
 .count-and-click .counter {
   display: inline-block;
@@ -88,6 +93,10 @@ button {
   padding: 20px;
   font-size: 32px;
   color: black;
+}
+.click-here button {
+  box-shadow: inset 3px 2px 6px 2px #333;
+  width: max-content;
 }
 
 .players-records {
